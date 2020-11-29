@@ -8,6 +8,8 @@ var s = new Array();
 
 s[0] = "Google^http://google.com/^Google Search Engine^google, search, engine";
 s[1] = "DuckDuckGo^http://duckduckgo.com/^DuckDuckGo. Privacy, simplified.^duckduckgo, search, engine"
+s[2] = "TheCrafters001^http://thecrafters001.github.io/^TheCrafters001 - Redefining Free^software, games, open-source, pokemon, free"
+s[3] = "GitHub^http://github.com/^GitHub - The OpenSource Hub^software, games, open-source, github
 
 var cookies = document.cookie;
 var p = cookies.indexOf("q=");
