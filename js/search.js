@@ -7,6 +7,7 @@ var bold = 1;
 var s = new Array();
 
 s[0] = "Google^http://google.com/^Google Search Engine^google, search, engine";
+s[1] = "DuckDuckGo^http://duckduckgo.com/^DuckDuckGo. Privacy, simplified.^duckduckgo, search, engine"
 
 var cookies = document.cookie;
 var p = cookies.indexOf("q=");
