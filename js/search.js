@@ -10,6 +10,18 @@ s[0] = "Google^http://google.com/^Google Search Engine^google, search, engine";
 s[1] = "DuckDuckGo^http://duckduckgo.com/^DuckDuckGo. Privacy, simplified.^duckduckgo, search, engine"
 s[2] = "TheCrafters001^http://thecrafters001.github.io/^TheCrafters001 - Redefining Free^software, games, open-source, pokemon, free"
 s[3] = "GitHub^http://github.com/^GitHub - The OpenSource Hub^software, games, open-source, github"
+s[4] = "GMail^http://gmail.com/^GMail - Google Email^google, gmail, email, mail"
+s[5] = "Google Drive^http://drive.google.com/^Google Drive - Google Cloud Storage^google, cloud, drive, storage"
+s[6] = "Google Docs^http://docs.google.com/^Google Docs^google, docs, drive, storage, cloud"
+s[7] = "Google Forms^http://docs.google.com/forms^Google Forms^google, docs, forms, drive, storage, cloud"
+s[8] = "Google Classroom^http://classroom.google.com/^Google Classroom^google, docs, forms, drive, storage, cloud, classroom"
+s[9] = "Google Fonts^http://fonts.google.com/^Google Fonts^google, fonts"
+s[10] = "Google Translate^http://translate.google.com/^Google Translate^google, translate"
+s[11] = "YouTube^http://youtube.com/^Broadcast Yourself^google, youtube, videos"
+s[12] = "Blogger^http://www.blogger.com/^Create a unique and beautiful blog. It’s easy and free.^google, blog, videos, docs, drive"
+s[13] = "Firebase^http://firebase.google.com/^Firebase helps mobile and web app teams succeed^google, firebase, developer"
+s[14] = "GameJolt^http://gamejolt.com/^Games for the love of it^gamejolt, games, indie, free, paid, marketplace"
+
 
 var cookies = document.cookie;
 var p = cookies.indexOf("q=");
