@@ -113,7 +113,7 @@ function num_jse() {
 
 function out_jse() {
 	if (co == 0) {
-		document.write('Your search did not match any documents.<p>Make sure all keywords are spelt correctly.<br>Try different or more general keywords.');
+		document.write('Your search did not match any documents.<br>Make sure all keywords are spelt correctly.<br>Try different or more general keywords.<br>Your search also may not be in OpenSearch yet.');
 		return;
 	}
 	for (var a = 0; a < r.length; a++) {
