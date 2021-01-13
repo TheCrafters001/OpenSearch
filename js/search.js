@@ -6,6 +6,7 @@ var bold = 1;
 
 var s = new Array();
 
+// Search Entries
 s[0] = "Google^http://google.com/^Google Search Engine^google, search, engine";
 s[1] = "DuckDuckGo^http://duckduckgo.com/^DuckDuckGo. Privacy, simplified.^duckduckgo, search, engine";
 s[2] = "TheCrafters001^http://thecrafters001.github.io/^TheCrafters001 - Redefining Free^software, games, open-source, pokemon, free";
@@ -23,7 +24,10 @@ s[13] = "Firebase^http://firebase.google.com/^Firebase helps mobile and web app 
 s[14] = "GameJolt^http://gamejolt.com/^Games for the love of it^gamejolt, games, indie, free, paid, marketplace";
 s[15] = "Itch^http://itch.io/^Download the latest indie games - itch.io^itch, itch.io, games, indie, free, paid, marketplace";
 s[16] = "IndieDB^http://indiedb.com/^Rockin' Indie Games one pixel at a time - Indie DB^indiedb, db, games, indie, free, paid, marketplace";
-
+s[17] = "OpenSearch^http://thecrafters001.github.io/OpenSearch/^OpenSearch, Keeping your data yours.^search, open-source";
+s[18] = "YouTube Music^http://music.youtube.com^YouTube Music^youtube, music, videos, google";
+s[19] = "Welcome to Steam^http://store.steampowered.com^Steam is the ultimate destination for playing, discussing, and creating games.^steam, games, software, marketplace, valve";
+s[20] = "Origin^http://origin.com/^Get great PC and Mac games on Origin. Play the latest RPGs, shooters, Sims games & more. Try before you buy demos and trials and score total free games!^origin, games, market";
 
 var cookies = document.cookie;
 var p = cookies.indexOf("q=");

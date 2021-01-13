@@ -1,4 +1,4 @@
-var results_location = "/OpenSearch/search_legacy.html";
+var results_location = "/OpenSearch/legacy/search.html";
 
 function search_form(jse_Form) {
 	if (jse_Form.d.value.length > 0) {
