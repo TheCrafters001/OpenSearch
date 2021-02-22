@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
     <link href="css/styles.css" rel="stylesheet">
     <meta name="description" content="Open{Search};, an open-source, free to use, search engine.">
     <meta name="keywords" content="search">
@@ -37,8 +38,8 @@
         <nav class="uk-navbar-container" uk-navbar>
             <div class="uk-navbar-left">
                 <ul class="uk-navbar-nav">
-                    <li class="uk-active"><a href="/OpenSearch/">Home</a></li>
-                    <li><a href="/OpenSearch/comments.html">Comments</a></li>
+                    <li><a href="/OpenSearch/">Home</a></li>
+                    <li class="uk-active"><a href="/OpenSearch/comments.html">Comments</a></li>
                     <li><a href="/OpenSearch/about.html">About</a></li>
                 </ul>
             </div>
@@ -53,10 +54,10 @@
                    <strong>Notice!</strong> Please enable Javascript. OpenSearch uses javascript to power the search engine.
                 </div>
             </noscript>
-            <form class="uk-search uk-search-large uk-background-muted" name="jse_Form" onsubmit="search_form(jse_Form);return false">
-                <span uk-search-icon></span>
-                <input class="uk-search-input" name="d" type="text" placeholder="Search...">
-            </form>
+            
+            <!-- Comments -->
+            <div id="gitalk-container"></div>
+
             <p>
                 Copyright &copy; 2020
                 <script>new Date().getFullYear()>2020&&document.write("- "+new Date().getFullYear());</script>,TheCrafters001
@@ -66,6 +67,24 @@
             <a href="/OpenSearch/legacy/index.html">Legacy Site</a><br> Website Version 2.0 <br><br>
         </div>
     </div>
+
+    <!-- Comments Code -->
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+        const gitalk = new Gitalk({
+            clientID: 'ad337346e4a71caf812b',
+            clientSecret: 'e71e82ff768537d25d1c1c21a9317df6f8592fe7',
+            repo: 'OpenSearch',      // The repository of store comments,
+            owner: 'TheCrafters001',
+            admin: ['TheCrafters001', 'Frozentual', 'Frozentual2'],
+            id: location.pathname,      // Ensure uniqueness and length less than 50
+            distractionFreeMode: false  // Facebook-like distraction free mode
+        })
+
+        gitalk.render('gitalk-container')
+    </script>
+
+    <script type="text/javascript" src="//coronabnr-53eb.kxcdn.com/coronabar.min.js" async></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/js/uikit.min.js" 
                 integrity="sha512-OZ9Sq7ecGckkqgxa8t/415BRNoz2GIInOsu8Qjj99r9IlBCq2XJlm9T9z//D4W1lrl+xCdXzq0EYfMo8DZJ+KA==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/js/uikit-icons.min.js" 
