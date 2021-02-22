@@ -6,7 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/css/uikit.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
     <link href="css/styles.css" rel="stylesheet">
     <meta name="description" content="Open{Search};, an open-source, free to use, search engine.">
     <meta name="keywords" content="search">
@@ -21,6 +20,8 @@
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="msapplication-config" content="/OpenSearch/ico/browserconfig.xml?v=1">
     <meta name="theme-color" content="#ffffff">
+
+    <link href="https://unpkg.com/octomments/build/ocs-ui.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -54,13 +55,11 @@
                    <strong>Notice!</strong> Please enable Javascript. OpenSearch uses javascript to power the search engine.
                 </div>
             </noscript>
-            
-            <div class="uk-alert-warning">
-                <strong>Notice!</strong> Currently the comments do not work. This notice will go away when they do.
-             </div>
 
-            <!-- Comments -->
-            <div id="gitalk-container"></div>
+            <div align="left">
+                <!-- Comments -->
+                <div id="comments"></div>
+            </div>
 
             <p>
                 Copyright &copy; 2020
@@ -73,19 +72,16 @@
     </div>
 
     <!-- Comments Code -->
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script src="https://unpkg.com/octomments/build/ocs.min.js"></script>
     <script>
-        const gitalk = new Gitalk({
-            clientID: 'ad337346e4a71caf812b',
-            clientSecret: 'e71e82ff768537d25d1c1c21a9317df6f8592fe7',
-            repo: 'OpenSearch',      // The repository of store comments,
+        Octomments({
+            github: {
             owner: 'TheCrafters001',
-            admin: ['TheCrafters001', 'Frozentual', 'Frozentual2'],
-            id: "OpenSearch Comments",      // Ensure uniqueness and length less than 50
-            distractionFreeMode: false  // Facebook-like distraction free mode
-        })
-
-        gitalk.render('gitalk-container')
+            repo: 'OpenSearch',
+            },
+            issueNumber: 2,
+            renderer: [OctommentsRenderer, '#comments']
+        }).init();
     </script>
 
     <script type="text/javascript" src="//coronabnr-53eb.kxcdn.com/coronabar.min.js" async></script>
