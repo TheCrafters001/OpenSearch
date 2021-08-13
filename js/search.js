@@ -11,6 +11,7 @@ s[0] = "Google^http://google.com/^Google Search Engine^google, search, engine";
 s[1] = "DuckDuckGo^http://duckduckgo.com/^DuckDuckGo. Privacy, simplified.^duckduckgo, search, engine";
 s[2] = "TheCrafters001^http://thecrafters001.github.io/^TheCrafters001 - Redefining Free^software, games, open-source, pokemon, free";
 s[3] = "GitHub^http://github.com/^GitHub - The OpenSource Hub^software, games, open-source, github";
+// Main Google Services
 s[4] = "GMail^http://gmail.com/^GMail - Google Email^google, gmail, email, mail";
 s[5] = "Google Drive^http://drive.google.com/^Google Drive - Google Cloud Storage^google, cloud, drive, storage";
 s[6] = "Google Docs^http://docs.google.com/^Google Docs^google, docs, drive, storage, cloud";
@@ -21,6 +22,7 @@ s[10] = "Google Translate^http://translate.google.com/^Google Translate^google, 
 s[11] = "YouTube^http://youtube.com/^Broadcast Yourself^google, youtube, videos";
 s[12] = "Blogger^http://www.blogger.com/^Create a unique and beautiful blog. It’s easy and free.^google, blog, videos, docs, drive";
 s[13] = "Firebase^http://firebase.google.com/^Firebase helps mobile and web app teams succeed^google, firebase, developer";
+// End Main Google Services
 s[14] = "GameJolt^http://gamejolt.com/^Games for the love of it^gamejolt, games, indie, free, paid, marketplace";
 s[15] = "Itch^http://itch.io/^Download the latest indie games - itch.io^itch, itch.io, games, indie, free, paid, marketplace";
 s[16] = "IndieDB^http://indiedb.com/^Rockin' Indie Games one pixel at a time - Indie DB^indiedb, db, games, indie, free, paid, marketplace";
@@ -32,6 +34,8 @@ s[21] = "ROBLOX^http://roblox.com/^Roblox is ushering in the next generation of 
 s[22] = "Twitter^http://twitter.com/^ ^twitter, social, media, tweet, retweet, networking"
 s[23] = "TweetDeck^http://tweetdeck.twitter.com/^ ^twitter, social, media, tweet, retweet, networking, tweetdeck"
 s[24] = "Relic Castle^https://reliccastle.com/^Relic Castle is a tight-knit community for Pokemon fan games. We have something to offer players and developers, both old and new.^pokemon, games, software, resources, developer"
+s[25] = "Essentials.TF^https://essentials.tf/^Competitive Team Fortress 2 Coverage &amp; Casting^games, team, fortress"
+s[26] = "Visual Studio^https://visualstudio.com/^Microsoft Visual Studio 2019 &amp; 2022 Preview^development, visual, studio, 2019, 2022, 2017, 2015, 2013"
 
 var cookies = document.cookie;
 var p = cookies.indexOf("q=");
