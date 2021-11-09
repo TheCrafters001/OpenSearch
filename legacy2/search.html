@@ -37,34 +37,54 @@
         <nav class="uk-navbar-container" uk-navbar>
             <div class="uk-navbar-left">
                 <ul class="uk-navbar-nav">
-                    <li><a href="/OpenSearch/">Home</a></li>
-                    <li><a href="/OpenSearch/comments.html">Comments</a></li>
-                    <li class="uk-active"><a href="/OpenSearch/about.html">About</a></li>
+                    <li class="uk-active"><a href="/OpenSearch/legacy2/">Home</a></li>
+                    <li><a href="/OpenSearch/legacy2/comments.html">Comments</a></li>
+                    <li><a href="/OpenSearch/legacy2/about.html">About</a></li>
                 </ul>
             </div>
         </nav>
     </div>
     <div class="uk-container">
-        <div class="uk-align-center" align="center">
-            <img src="/OpenSearch/images/openSearch.png" height="200" width="300"><br>
+        <script language="JavaScript1.3" type="text/javascript" src="/OpenSearch/js/legacy/search_form.js"></script>
+        <script language="JavaScript1.3" type="text/javascript" src="/OpenSearch/js/legacy/search.js"></script>
+        <div>
+            <img src="/OpenSearch/images/openSearch.png" height="100" width="200">
+            <div>
+                <h1><span style="font-size:30px;">Results</span></h1>
+            </div>
             <noscript>
                 <div class="uk-alert-warning">
                    <strong>Notice!</strong> Please enable Javascript. OpenSearch uses javascript to power the search engine.
                 </div>
             </noscript>
-            <div>
-                <h1><span style="font-size:30px;">About Open{Search};</span></h1>
-            </div>        
+            <form class="uk-search uk-search-large uk-background-muted" name="jse_Form" onsubmit="search_form(jse_Form);return false">
+                <span uk-search-icon></span>
+                <input class="uk-search-input" name="d" type="text" placeholder="Search...">
+            </form>
+            <br><br><br>
+            <script language="JavaScript1.3" type="text/javascript">
+               return_query()
+            </script>
+            <script language="JavaScript1.3" type="text/javascript">
+               num_jse()
+            </script> page(s) found
             <hr>
-            <p>Open{Search}; is made to help users search for websites! Open{Search}; can also be called OpenSearch. OpenSearch does NOT have any search results that are paid for, and doesn't have any ADs. Also, I don't track your data. Ever.</p>
-            <p>OpenSearch is also Open-Source, meaning that anyone can see and contribute to the code.</p>
             <p>
-                Copyright &copy; 2020
-                <script>new Date().getFullYear()>2020&&document.write("- "+new Date().getFullYear());</script>,TheCrafters001
+               <script language="JavaScript1.3" type="text/javascript">
+                  out_jse()
+               </script>
             </p>
-            <a href="//thecrafters001.github.io/policies/privacy">Privacy Policy</a> |
-            <a href="//thecrafters001.github.io/policies/cookie">Cookie Policy</a> | 
-            <a href="/OpenSearch/legacy/index.html">Legacy Site</a><br> Website Version 2.0 <br><br>
+
+            <div align="center">
+               <p>
+                  Copyright &copy; 2020
+                  <script>new Date().getFullYear()>2020&&document.write("- "+new Date().getFullYear());</script>,TheCrafters001
+               </p>
+               <a href="//thecrafters001.github.io/policies/privacy">Privacy Policy</a> |
+               <a href="//thecrafters001.github.io/policies/cookie">Cookie Policy</a> | 
+              <a href="/OpenSearch/legacy/index.html">Legacy Site</a><br> Website Version 2.0
+              <br><br>
+            </div>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/js/uikit.min.js" 
